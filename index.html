@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title> Digital Republic </title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	</head>
+	<body>
+
+		<header>
+			<div class="container">
+				<h1 class="titulo-challenger">Code Challenger</h1>
+			</div>
+		</header>
+
+		<section class="container">
+		    <h2 id="titulo-form">Insira as metragens das paredes</h2>
+			<img id="imagem-room" src="images/living_room.jpg">	
+					
+		    <form id="form">
+				<div class="first-wall">
+					<div class="grupo">
+						<label for="largura-wall-um">Largura da parede 1:</label>
+						<input type="text" id="largura-wall-um" name="largura_um" class="campo campo-medio" 
+							placeholder="Largura, ex: 3.00 (decimal) ou 3 (inteiro)" required autofocus/>
+					</div>
+					<div class="grupo">
+						<label for="altura_wall_um">Altura da parede 1:</label>
+						<input type="text" id="altura_wall_um" name="altura_um" class="campo campo-medio" 
+							placeholder="Altura, ex: 6.00 (decimal) ou 6 (inteiro)" />
+					</div>
+					<div class="itens-sala">
+						<label for="portas-parede-um">Portas da parede 1:</label>
+						<input type="text" id="portas-parede-um" name="portas_um" class="campo campo-medio" placeholder="Digite a quantidade de portas" />
+					</div>
+					<div class="itens-sala">
+						<label for="janelas-parede-um">Janelas da parede 1:</label>
+						<input type="text" id="janelas-parede-um" name="janelas_um" class="campo campo-medio" placeholder="Digite a quantidade de Janelas" />
+					</div>
+				</div>
+				<div class="second-wall">
+					<div class="grupo">
+						<label for="largura_dois">Largura da parede 2:</label>
+						<input type="text" id="largura_dois" name="largura_dois" class="campo campo-medio" placeholder="Largura, ex: 3.00 (decimal) ou 3 (inteiro)" />
+					</div>
+					<div class="grupo">
+						<label for="altura-wall-dois">Altura parede 2:</label>
+						<input type="text" id="altura-wall-dois" name="altura_dois" class="campo campo-medio" placeholder="Altura, ex: 6.00 (decimal) ou 6 (inteiro)" />
+					</div>
+					<div class="itens-sala">
+						<label for="portas-parede-dois">Portas da parede 2:</label>
+						<input type="text" id="portas-parede-dois" name="portas_dois" class="campo campo-medio" placeholder="Digite a quantidade de portas" />
+					</div>
+					<div class="itens-sala">
+						<label for="janelas-parede-dois">Janelas da parede 2:</label>
+						<input type="text" id="janelas-parede-dois" name="janelas_dois" class="campo campo-medio" placeholder="Digite a quantidade de janelas" />
+					</div>
+				</div>
+				<div class="third-wall">
+					<div class="grupo">
+						<label for="largura-wall-tres">Largura da parede 3:</label>
+						<input type="text" id="largura-wall-3" name="largura_tres" class="campo campo-medio" placeholder="Largura, ex: 3.00 (decimal) ou 3 (inteiro)" />
+					</div>
+					<div class="grupo">
+						<label for="altura-wall-tres">Altura da parede 3:</label>
+						<input type="text" id="altura-wall-3" name="altura_tres" class="campo campo-medio" placeholder="Altura, ex: 6.00 (decimal) ou 6 (inteiro)" />
+					</div>
+					<div class="itens-sala">
+						<label for="portas-parede-tres">Portas da parede 3:</label>
+						<input type="text" id="portas-parede-tres" name="portas_tres" class="campo campo-medio" placeholder="Digite a quantidade de portas" />
+					</div>
+					<div class="itens-sala">
+						<label for="janelas-parede-tres">Janelas da parede 3:</label>
+						<input type="text" id="janelas-parede-tres" name="janelas_tres" class="campo campo-medio" placeholder="Digite a quantidade de janelas" />
+					</div>
+				</div>
+				<div class="fourth-wall">
+					<div class="grupo">
+						<label for="largura-wall-quatro">Largura da parede 4:</label>
+						<input type="text" id="largura-wall-4" name="largura_quatro" class="campo campo-medio" placeholder="Largura, ex: 3.00 (decimal) ou 3 (inteiro)" />
+					</div>
+					<div class="grupo">
+						<label for="altura-wall-quatro">Altura da parede 4:</label>
+						<input type="text" id="altura-wall-4" name="altura_quatro" class="campo campo-medio" placeholder="Altura, ex: 6.00 (decimal) ou 6 (inteiro)" />
+					</div>
+					<div class="itens-sala">
+						<label for="portas-parede-quatro">Portas da parede 4:</label>
+						<input type="text" id="portas-parede-quatro" name="portas_quatro" class="campo campo-medio" placeholder="Digite a quantidade de portas" />
+					</div>
+					<div class="itens-sala">
+						<label for="janelas-parede-quatro">Janelas da parede 4:</label>
+						<input type="text" id="janelas-parede-quatro" name="janelas_quatro" class="campo campo-medio" placeholder="Digite a quantidade de janelas" />
+					</div>
+				</div>
+
+				<button id="btn-calcular" class="btn btn-primary">Calcular</button>
+				<button id="btn-limpar" class="btn btn-primary">Limpar</button>
+
+		    </form>
+
+			<form class="area-de-texto">				
+				<div class="material-pintura">
+					<label id="label-quantidade" for="material">Quantidade de latas necessárias:</label>
+					<textarea cols="81" rows="7"  id="material-pintura" name="material"></textarea>
+				</div>
+			</form>
+		</section>
+
+		<script src="js/pintura/calcula-pintura.js"></script>
+		<script src="js/pintura/verifica-valores.js"></script>
+		<script src="js/pintura/formulario.js"></script>
+
+			<nav>
+				<ul>
+					<li><a href="https://jobs.kenoby.com/digital-republic">Quem somos  </a></li>
+					<li><a href="https://www.digitalrepublic.com.br">Digital Republic</a></li>
+				</ul>
+			</nav>
+	</body>
+</html>
